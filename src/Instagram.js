@@ -43,13 +43,11 @@ export default class InstaFeed extends React.Component {
 	render() {
 		return (
 			<div id="instaFeed" className="container" >
-				{this.igData}
 				{ this.state.igSent ? 
 					this.state.igData.map( ( post ) => 
 						<img src={post.images.thumbnail.url} key={post.id} />
 					) : null 
 		 		}
-				{this.props.children}
 			</div>
 		)
 	}
