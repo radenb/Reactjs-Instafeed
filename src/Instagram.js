@@ -1,5 +1,5 @@
 import React from 'react'
-import { fetchData } from '../Actions'
+import { fetchData } from './Actions.js'
 
 export default class InstaFeed extends React.Component {
 	constructor(props) {
